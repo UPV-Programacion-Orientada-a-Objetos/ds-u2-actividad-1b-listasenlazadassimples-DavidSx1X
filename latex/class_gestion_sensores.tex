@@ -1,0 +1,80 @@
+\doxysection{Gestion\+Sensores Class Reference}
+\hypertarget{class_gestion_sensores}{}\label{class_gestion_sensores}\index{GestionSensores@{GestionSensores}}
+
+
+Implementa la lista enlazada principal NO genérica para almacenar punteros polimórficos a Sensor\+Base\texorpdfstring{$\ast$}{*}.  
+
+
+
+
+{\ttfamily \#include $<$Gestion\+Sensores.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gestion_sensores_af7072b1c7f3a1e980f3af45f9d8e8a29}\label{class_gestion_sensores_af7072b1c7f3a1e980f3af45f9d8e8a29} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Gestion\+Sensores} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la lista de gestión. ¡\+CRÍ\+TICO! Debe iterar y hacer \textquotesingle{}delete\textquotesingle{} de cada puntero Sensor\+Base\texorpdfstring{$\ast$}{*} para invocar la cadena de destructores virtuales. \end{DoxyCompactList}\item 
+\Hypertarget{class_gestion_sensores_a82a55209b3de568980268ada4bfb7d06}\label{class_gestion_sensores_a82a55209b3de568980268ada4bfb7d06} 
+{\bfseries Gestion\+Sensores} (const \mbox{\hyperlink{class_gestion_sensores}{Gestion\+Sensores}} \&)=delete
+\item 
+\Hypertarget{class_gestion_sensores_a5e72617583be3e46f781491aee17be6c}\label{class_gestion_sensores_a5e72617583be3e46f781491aee17be6c} 
+\mbox{\hyperlink{class_gestion_sensores}{Gestion\+Sensores}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_gestion_sensores}{Gestion\+Sensores}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_gestion_sensores_a290403d1ebc1a58574ec0f935460bb4b}{agregar\+Sensor}} (\mbox{\hyperlink{class_sensor_base}{Sensor\+Base}} \texorpdfstring{$\ast$}{*}nuevo\+Sensor)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo sensor (ya creado con \textquotesingle{}new\textquotesingle{}) a la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_base}{Sensor\+Base}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gestion_sensores_aa1fee45ae9cf27229c8052a0856c4b38}{buscar\+Sensor}} (const char \texorpdfstring{$\ast$}{*}nombre)
+\begin{DoxyCompactList}\small\item\em Busca un sensor por su nombre. \end{DoxyCompactList}\item 
+\Hypertarget{class_gestion_sensores_a07e63f5d0a4eb23f48b10414c2cbc909}\label{class_gestion_sensores_a07e63f5d0a4eb23f48b10414c2cbc909} 
+void {\bfseries procesar\+Todos} ()
+\begin{DoxyCompactList}\small\item\em Itera sobre todos los sensores y llama a su método polimórfico. \end{DoxyCompactList}\item 
+\Hypertarget{class_gestion_sensores_ab31c3cd4a440fde15cd010bbe96485fb}\label{class_gestion_sensores_ab31c3cd4a440fde15cd010bbe96485fb} 
+void {\bfseries imprimir\+Todos} () const
+\begin{DoxyCompactList}\small\item\em Imprime la información de todos los sensores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementa la lista enlazada principal NO genérica para almacenar punteros polimórficos a Sensor\+Base\texorpdfstring{$\ast$}{*}. 
+
+\label{doc-func-members}
+\Hypertarget{class_gestion_sensores_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gestion_sensores_a290403d1ebc1a58574ec0f935460bb4b}\index{GestionSensores@{GestionSensores}!agregarSensor@{agregarSensor}}
+\index{agregarSensor@{agregarSensor}!GestionSensores@{GestionSensores}}
+\doxysubsubsection{\texorpdfstring{agregarSensor()}{agregarSensor()}}
+{\footnotesize\ttfamily \label{class_gestion_sensores_a290403d1ebc1a58574ec0f935460bb4b} 
+void Gestion\+Sensores\+::agregar\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_base}{Sensor\+Base}} \texorpdfstring{$\ast$}{*}}]{nuevo\+Sensor}{}\end{DoxyParamCaption})}
+
+
+
+Agrega un nuevo sensor (ya creado con \textquotesingle{}new\textquotesingle{}) a la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuevo\+Sensor} & Puntero al sensor a agregar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gestion_sensores_aa1fee45ae9cf27229c8052a0856c4b38}\index{GestionSensores@{GestionSensores}!buscarSensor@{buscarSensor}}
+\index{buscarSensor@{buscarSensor}!GestionSensores@{GestionSensores}}
+\doxysubsubsection{\texorpdfstring{buscarSensor()}{buscarSensor()}}
+{\footnotesize\ttfamily \label{class_gestion_sensores_aa1fee45ae9cf27229c8052a0856c4b38} 
+\mbox{\hyperlink{class_sensor_base}{Sensor\+Base}} \texorpdfstring{$\ast$}{*} Gestion\+Sensores\+::buscar\+Sensor (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nombre}{}\end{DoxyParamCaption})}
+
+
+
+Busca un sensor por su nombre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & El ID (nombre) del sensor a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero al Sensor\+Base\texorpdfstring{$\ast$}{*} o nullptr si no se encuentra. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Gestion\+Sensores.\+h\item 
+src/Gestion\+Sensores.\+cpp\end{DoxyCompactItemize}

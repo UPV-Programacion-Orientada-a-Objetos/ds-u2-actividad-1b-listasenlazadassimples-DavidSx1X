@@ -1,0 +1,30 @@
+\doxysection{Sensor\+Base.\+h}
+\hypertarget{_sensor_base_8h_source}{}\label{_sensor_base_8h_source}\index{src/SensorBase.h@{src/SensorBase.h}}
+\mbox{\hyperlink{_sensor_base_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SENSOR\_BASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SENSOR\_BASE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sensor_base_aa03697680b21dbf3ca5ab797d50c6126}{SensorBase}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{char}\ nombre[50];}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_sensor_base_aa03697680b21dbf3ca5ab797d50c6126}{SensorBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ n);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_sensor_base_af38b2b0e047cb4f0304fc4c204c420fa}{\string~SensorBase}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ Métodos\ Virtuales\ Puros\ (Interfaz)\ -\/-\/-\/}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_base_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{procesarLectura}}()\ =\ 0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_base_a7cf3aeb12b330c500e2a5136fa020eec}{imprimirInfo}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_base_adfcce9176e571b524e9cd03e507e94d4}{agregarLectura}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ valor)\ =\ 0;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_sensor_base_ae96d193c623231a955756bceac482f9c}{getNombre}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SENSOR\_BASE\_H}}
+
+\end{DoxyCode}

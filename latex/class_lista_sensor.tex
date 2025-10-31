@@ -1,0 +1,139 @@
+\doxysection{Lista\+Sensor\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_lista_sensor}{}\label{class_lista_sensor}\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_lista_sensor_add555365175bf2140b81b9a2b5a303f5}\label{class_lista_sensor_add555365175bf2140b81b9a2b5a303f5} 
+{\bfseries Lista\+Sensor} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_sensor_a1f0e57e514a2624a2473795bbd8fec8d}\label{class_lista_sensor_a1f0e57e514a2624a2473795bbd8fec8d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Lista\+Sensor} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyEnumerate}
+\item Destructor. Libera toda la memoria de los nodos. 
+\end{DoxyEnumerate}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_sensor_a81b2253c4b18038c2b9f823d5e244227}{Lista\+Sensor}} (const \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}} \&otra)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyEnumerate}
+\item Constructor de Copia (Deep Copy). 
+\end{DoxyEnumerate}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}} \& \mbox{\hyperlink{class_lista_sensor_acd2b457d8d9fc55aeb832fd01c00f5a4}{operator=}} (const \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}} \&otra)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyEnumerate}
+\item Operador de Asignación (Copy-\/and-\/\+Swap idiom). 
+\end{DoxyEnumerate}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_sensor_a541f2559a48895a871cc9b32b662ee5c}{insertar\+Al\+Final}} (T dato)
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo dato al final de la lista. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_sensor_a11f84bbbda6299d28a3018eefeeb5a02}\label{class_lista_sensor_a11f84bbbda6299d28a3018eefeeb5a02} 
+void {\bfseries imprimir} () const
+\begin{DoxyCompactList}\small\item\em Imprime todos los elementos de la lista. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_sensor_a4ccbebf964c8e3243c6c1c144f9ef181}\label{class_lista_sensor_a4ccbebf964c8e3243c6c1c144f9ef181} 
+int {\bfseries get\+Tamano} () const
+\item 
+\Hypertarget{class_lista_sensor_a2dd75ef08cf9a41dc12886b45aa0571e}\label{class_lista_sensor_a2dd75ef08cf9a41dc12886b45aa0571e} 
+bool {\bfseries esta\+Vacia} () const
+\item 
+double \mbox{\hyperlink{class_lista_sensor_aba3df6bcc79aa8686b88d8cffc9a6e94}{calcular\+Promedio}} () const
+\begin{DoxyCompactList}\small\item\em Calcula el promedio de todos los elementos en la lista. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_lista_sensor_aeab54c547d4147d2f483bdea18be3015}{encontrar\+YQuitar\+Minimo}} ()
+\begin{DoxyCompactList}\small\item\em Encuentra el valor más bajo y lo elimina de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_lista_sensor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_lista_sensor_a81b2253c4b18038c2b9f823d5e244227}\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!ListaSensor@{ListaSensor}}
+\index{ListaSensor@{ListaSensor}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListaSensor()}{ListaSensor()}}
+{\footnotesize\ttfamily \label{class_lista_sensor_a81b2253c4b18038c2b9f823d5e244227} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}}$<$ T $>$\+::\+Lista\+Sensor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}}$<$ T $>$ \&}]{otra}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+\begin{DoxyEnumerate}
+\item Constructor de Copia (Deep Copy). 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & La lista a copiar. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_lista_sensor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lista_sensor_aba3df6bcc79aa8686b88d8cffc9a6e94}\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!calcularPromedio@{calcularPromedio}}
+\index{calcularPromedio@{calcularPromedio}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{calcularPromedio()}{calcularPromedio()}}
+{\footnotesize\ttfamily \label{class_lista_sensor_aba3df6bcc79aa8686b88d8cffc9a6e94} 
+template$<$typename T$>$ \\
+double \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}}$<$ T $>$\+::calcular\+Promedio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcula el promedio de todos los elementos en la lista. 
+
+\begin{DoxyReturn}{Returns}
+El promedio (double), o 0 si la lista está vacía. 
+\end{DoxyReturn}
+\Hypertarget{class_lista_sensor_aeab54c547d4147d2f483bdea18be3015}\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!encontrarYQuitarMinimo@{encontrarYQuitarMinimo}}
+\index{encontrarYQuitarMinimo@{encontrarYQuitarMinimo}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{encontrarYQuitarMinimo()}{encontrarYQuitarMinimo()}}
+{\footnotesize\ttfamily \label{class_lista_sensor_aeab54c547d4147d2f483bdea18be3015} 
+template$<$typename T$>$ \\
+T \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}}$<$ T $>$\+::encontrar\+YQuitar\+Minimo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Encuentra el valor más bajo y lo elimina de la lista. 
+
+\begin{DoxyReturn}{Returns}
+El valor mínimo que fue eliminado. 
+\end{DoxyReturn}
+\Hypertarget{class_lista_sensor_a541f2559a48895a871cc9b32b662ee5c}\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!insertarAlFinal@{insertarAlFinal}}
+\index{insertarAlFinal@{insertarAlFinal}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insertarAlFinal()}{insertarAlFinal()}}
+{\footnotesize\ttfamily \label{class_lista_sensor_a541f2559a48895a871cc9b32b662ee5c} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}}$<$ T $>$\+::insertar\+Al\+Final (\begin{DoxyParamCaption}\item[{T}]{dato}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserta un nuevo dato al final de la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dato} & El dato de tipo T a insertar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_lista_sensor_acd2b457d8d9fc55aeb832fd01c00f5a4}\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_lista_sensor_acd2b457d8d9fc55aeb832fd01c00f5a4} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}} \& \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lista_sensor}{Lista\+Sensor}}$<$ T $>$ \&}]{otra}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+\begin{DoxyEnumerate}
+\item Operador de Asignación (Copy-\/and-\/\+Swap idiom). 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & La lista a asignar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia a esta lista (\texorpdfstring{$\ast$}{*}this). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_lista_sensor_8h}{Lista\+Sensor.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build/CMakeFiles/GestorSensores.dir
+C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build/CMakeFiles/rebuild_cache.dir
+C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build/CMakeFiles/doc.dir
+C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build/CMakeFiles/edit_cache.dir

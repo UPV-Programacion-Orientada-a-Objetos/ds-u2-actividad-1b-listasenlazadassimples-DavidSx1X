@@ -1,0 +1,27 @@
+[
+{
+  "directory": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe    -static-libstdc++ -static-libgcc -g -std=gnu++11 -o CMakeFiles/GestorSensores.dir/src/main.cpp.obj -c C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/main.cpp",
+  "file": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/main.cpp"
+},
+{
+  "directory": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe    -static-libstdc++ -static-libgcc -g -std=gnu++11 -o CMakeFiles/GestorSensores.dir/src/SensorBase.cpp.obj -c C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/SensorBase.cpp",
+  "file": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/SensorBase.cpp"
+},
+{
+  "directory": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe    -static-libstdc++ -static-libgcc -g -std=gnu++11 -o CMakeFiles/GestorSensores.dir/src/SensorTemperatura.cpp.obj -c C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/SensorTemperatura.cpp",
+  "file": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/SensorTemperatura.cpp"
+},
+{
+  "directory": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe    -static-libstdc++ -static-libgcc -g -std=gnu++11 -o CMakeFiles/GestorSensores.dir/src/SensorPresion.cpp.obj -c C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/SensorPresion.cpp",
+  "file": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/SensorPresion.cpp"
+},
+{
+  "directory": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe    -static-libstdc++ -static-libgcc -g -std=gnu++11 -o CMakeFiles/GestorSensores.dir/src/GestionSensores.cpp.obj -c C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/GestionSensores.cpp",
+  "file": "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/src/GestionSensores.cpp"
+}
+]

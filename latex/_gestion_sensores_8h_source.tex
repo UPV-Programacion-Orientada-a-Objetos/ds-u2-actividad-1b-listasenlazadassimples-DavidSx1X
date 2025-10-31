@@ -1,0 +1,40 @@
+\doxysection{Gestion\+Sensores.\+h}
+\hypertarget{_gestion_sensores_8h_source}{}\label{_gestion_sensores_8h_source}\index{src/GestionSensores.h@{src/GestionSensores.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GESTION\_SENSORES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GESTION\_SENSORES\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_base_8h}{SensorBase.h}}"{}}\ \textcolor{comment}{//\ Almacena\ punteros\ a\ este\ tipo}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }GestionSensores\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }NodoGestion\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_sensor_base}{SensorBase}}*\ sensor;\ \textcolor{comment}{//\ Puntero\ a\ la\ clase\ base}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ NodoGestion*\ siguiente;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ NodoGestion(\mbox{\hyperlink{class_sensor_base}{SensorBase}}*\ s)\ :\ sensor(s),\ siguiente(\textcolor{keyword}{nullptr})\ \{\}}
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ NodoGestion*\ cabeza;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ GestionSensores();}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_gestion_sensores_af7072b1c7f3a1e980f3af45f9d8e8a29}{\string~GestionSensores}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Prohibir\ copia\ para\ evitar\ problemas\ de\ doble\ 'delete'}}
+\DoxyCodeLine{00036\ \ \ \ \ GestionSensores(\textcolor{keyword}{const}\ GestionSensores\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00037\ \ \ \ \ GestionSensores\&\ operator=(\textcolor{keyword}{const}\ GestionSensores\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gestion_sensores_a290403d1ebc1a58574ec0f935460bb4b}{agregarSensor}}(\mbox{\hyperlink{class_sensor_base}{SensorBase}}*\ nuevoSensor);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_sensor_base}{SensorBase}}*\ \mbox{\hyperlink{class_gestion_sensores_aa1fee45ae9cf27229c8052a0856c4b38}{buscarSensor}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nombre);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gestion_sensores_a07e63f5d0a4eb23f48b10414c2cbc909}{procesarTodos}}();}
+\DoxyCodeLine{00056\ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gestion_sensores_ab31c3cd4a440fde15cd010bbe96485fb}{imprimirTodos}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GESTION\_SENSORES\_H}}
+
+\end{DoxyCode}

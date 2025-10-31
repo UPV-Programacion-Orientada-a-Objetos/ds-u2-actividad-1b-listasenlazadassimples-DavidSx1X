@@ -1,0 +1,121 @@
+\doxysection{Sensor\+Base Class Reference}
+\hypertarget{class_sensor_base}{}\label{class_sensor_base}\index{SensorBase@{SensorBase}}
+Inheritance diagram for Sensor\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sensor_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_base_aa03697680b21dbf3ca5ab797d50c6126}{Sensor\+Base}} (const char \texorpdfstring{$\ast$}{*}n)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_sensor_base_af38b2b0e047cb4f0304fc4c204c420fa}\label{class_sensor_base_af38b2b0e047cb4f0304fc4c204c420fa} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Sensor\+Base} ()
+\begin{DoxyCompactList}\small\item\em Destructor Virtual. ¡\+CRÍ\+TICO! Asegura que se llame al destructor de la clase derivada correcta al hacer delete de un puntero Sensor\+Base\texorpdfstring{$\ast$}{*}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sensor_base_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{procesar\+Lectura}} ()=0
+\begin{DoxyCompactList}\small\item\em Procesa las lecturas almacenadas (lógica específica del sensor). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sensor_base_a7cf3aeb12b330c500e2a5136fa020eec}{imprimir\+Info}} () const =0
+\begin{DoxyCompactList}\small\item\em Imprime la información y estado actual del sensor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sensor_base_adfcce9176e571b524e9cd03e507e94d4}{agregar\+Lectura}} (const char \texorpdfstring{$\ast$}{*}valor)=0
+\begin{DoxyCompactList}\small\item\em Agrega una nueva lectura (como string) para ser parseada. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_sensor_base_ae96d193c623231a955756bceac482f9c}{get\+Nombre}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sensor_base_a843ba88809ed7b78942a0a4b1c484cf5}\label{class_sensor_base_a843ba88809ed7b78942a0a4b1c484cf5} 
+char {\bfseries nombre} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_sensor_base_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sensor_base_aa03697680b21dbf3ca5ab797d50c6126}\index{SensorBase@{SensorBase}!SensorBase@{SensorBase}}
+\index{SensorBase@{SensorBase}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{SensorBase()}{SensorBase()}}
+{\footnotesize\ttfamily \label{class_sensor_base_aa03697680b21dbf3ca5ab797d50c6126} 
+Sensor\+Base\+::\+Sensor\+Base (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Nombre del sensor (se copiará). \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sensor_base_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sensor_base_adfcce9176e571b524e9cd03e507e94d4}\index{SensorBase@{SensorBase}!agregarLectura@{agregarLectura}}
+\index{agregarLectura@{agregarLectura}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{agregarLectura()}{agregarLectura()}}
+{\footnotesize\ttfamily \label{class_sensor_base_adfcce9176e571b524e9cd03e507e94d4} 
+virtual void Sensor\+Base\+::agregar\+Lectura (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{valor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Agrega una nueva lectura (como string) para ser parseada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & La lectura en formato de cadena de texto. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_sensor_presion_a842b0bcefce4fbfd1e6ef14ce0fe4117}{Sensor\+Presion}}, and \mbox{\hyperlink{class_sensor_temperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa}{Sensor\+Temperatura}}.
+
+\Hypertarget{class_sensor_base_ae96d193c623231a955756bceac482f9c}\index{SensorBase@{SensorBase}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily \label{class_sensor_base_ae96d193c623231a955756bceac482f9c} 
+const char \texorpdfstring{$\ast$}{*} Sensor\+Base\+::get\+Nombre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el nombre del sensor. 
+
+\begin{DoxyReturn}{Returns}
+const char\texorpdfstring{$\ast$}{*} al nombre. 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_base_a7cf3aeb12b330c500e2a5136fa020eec}\index{SensorBase@{SensorBase}!imprimirInfo@{imprimirInfo}}
+\index{imprimirInfo@{imprimirInfo}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{imprimirInfo()}{imprimirInfo()}}
+{\footnotesize\ttfamily \label{class_sensor_base_a7cf3aeb12b330c500e2a5136fa020eec} 
+virtual void Sensor\+Base\+::imprimir\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Imprime la información y estado actual del sensor. 
+
+
+
+Implemented in \mbox{\hyperlink{class_sensor_presion_ad5181690dfb24946217e882606f04428}{Sensor\+Presion}}, and \mbox{\hyperlink{class_sensor_temperatura_a95a263967c5f9a55da09be3b11c27c86}{Sensor\+Temperatura}}.
+
+\Hypertarget{class_sensor_base_a7fbc0a5b444f7d16cd60ba873b8ec8e4}\index{SensorBase@{SensorBase}!procesarLectura@{procesarLectura}}
+\index{procesarLectura@{procesarLectura}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{procesarLectura()}{procesarLectura()}}
+{\footnotesize\ttfamily \label{class_sensor_base_a7fbc0a5b444f7d16cd60ba873b8ec8e4} 
+virtual void Sensor\+Base\+::procesar\+Lectura (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Procesa las lecturas almacenadas (lógica específica del sensor). 
+
+
+
+Implemented in \mbox{\hyperlink{class_sensor_presion_aff696aceb5e619529f911311a35d3c76}{Sensor\+Presion}}, and \mbox{\hyperlink{class_sensor_temperatura_a36227dc500c6f8be7866cb0f396894b3}{Sensor\+Temperatura}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_sensor_base_8h}{Sensor\+Base.\+h}}\item 
+src/Sensor\+Base.\+cpp\end{DoxyCompactItemize}

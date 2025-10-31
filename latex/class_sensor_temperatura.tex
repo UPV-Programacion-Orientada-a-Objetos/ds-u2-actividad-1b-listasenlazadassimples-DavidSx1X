@@ -1,0 +1,105 @@
+\doxysection{Sensor\+Temperatura Class Reference}
+\hypertarget{class_sensor_temperatura}{}\label{class_sensor_temperatura}\index{SensorTemperatura@{SensorTemperatura}}
+
+
+Implementación concreta para un sensor de temperatura (float).  
+
+
+
+
+{\ttfamily \#include $<$Sensor\+Temperatura.\+h$>$}
+
+Inheritance diagram for Sensor\+Temperatura\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sensor_temperatura}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sensor_temperatura_aaede7e4b384eb6d99e031e05b8b5377c}\label{class_sensor_temperatura_aaede7e4b384eb6d99e031e05b8b5377c} 
+{\bfseries Sensor\+Temperatura} (const char \texorpdfstring{$\ast$}{*}n)
+\item 
+virtual void \mbox{\hyperlink{class_sensor_temperatura_a36227dc500c6f8be7866cb0f396894b3}{procesar\+Lectura}} () override
+\begin{DoxyCompactList}\small\item\em Procesa las lecturas almacenadas (lógica específica del sensor). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sensor_temperatura_a95a263967c5f9a55da09be3b11c27c86}{imprimir\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Imprime la información y estado actual del sensor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sensor_temperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa}{agregar\+Lectura}} (const char \texorpdfstring{$\ast$}{*}valor) override
+\begin{DoxyCompactList}\small\item\em Agrega una nueva lectura (como string) para ser parseada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sensor_base}{Sensor\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_base_aa03697680b21dbf3ca5ab797d50c6126}{Sensor\+Base}} (const char \texorpdfstring{$\ast$}{*}n)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Sensor\+Base} ()
+\begin{DoxyCompactList}\small\item\em Destructor Virtual. ¡\+CRÍ\+TICO! Asegura que se llame al destructor de la clase derivada correcta al hacer delete de un puntero Sensor\+Base\texorpdfstring{$\ast$}{*}. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_sensor_base_ae96d193c623231a955756bceac482f9c}{get\+Nombre}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_sensor_base}{Sensor\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+char {\bfseries nombre} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementación concreta para un sensor de temperatura (float). 
+
+\label{doc-func-members}
+\Hypertarget{class_sensor_temperatura_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sensor_temperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa}\index{SensorTemperatura@{SensorTemperatura}!agregarLectura@{agregarLectura}}
+\index{agregarLectura@{agregarLectura}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{agregarLectura()}{agregarLectura()}}
+{\footnotesize\ttfamily \label{class_sensor_temperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa} 
+void Sensor\+Temperatura\+::agregar\+Lectura (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{valor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Agrega una nueva lectura (como string) para ser parseada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & La lectura en formato de cadena de texto. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_sensor_base_adfcce9176e571b524e9cd03e507e94d4}{Sensor\+Base}}.
+
+\Hypertarget{class_sensor_temperatura_a95a263967c5f9a55da09be3b11c27c86}\index{SensorTemperatura@{SensorTemperatura}!imprimirInfo@{imprimirInfo}}
+\index{imprimirInfo@{imprimirInfo}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{imprimirInfo()}{imprimirInfo()}}
+{\footnotesize\ttfamily \label{class_sensor_temperatura_a95a263967c5f9a55da09be3b11c27c86} 
+void Sensor\+Temperatura\+::imprimir\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Imprime la información y estado actual del sensor. 
+
+
+
+Implements \mbox{\hyperlink{class_sensor_base_a7cf3aeb12b330c500e2a5136fa020eec}{Sensor\+Base}}.
+
+\Hypertarget{class_sensor_temperatura_a36227dc500c6f8be7866cb0f396894b3}\index{SensorTemperatura@{SensorTemperatura}!procesarLectura@{procesarLectura}}
+\index{procesarLectura@{procesarLectura}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{procesarLectura()}{procesarLectura()}}
+{\footnotesize\ttfamily \label{class_sensor_temperatura_a36227dc500c6f8be7866cb0f396894b3} 
+void Sensor\+Temperatura\+::procesar\+Lectura (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Procesa las lecturas almacenadas (lógica específica del sensor). 
+
+
+
+Implements \mbox{\hyperlink{class_sensor_base_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{Sensor\+Base}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Sensor\+Temperatura.\+h\item 
+src/Sensor\+Temperatura.\+cpp\end{DoxyCompactItemize}

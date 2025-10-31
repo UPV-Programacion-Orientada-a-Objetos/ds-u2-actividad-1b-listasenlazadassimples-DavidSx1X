@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SistemaSensores",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GestorSensores::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GestorSensores-Debug-2909301e749e5d412506.json",
+					"name" : "GestorSensores",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc-Debug-74ef6dda81075ba63e0c.json",
+					"name" : "doc",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X/build",
+		"source" : "C:/Proyectos/ds-u2-actividad-1b-listasenlazadassimples-DavidSx1X"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

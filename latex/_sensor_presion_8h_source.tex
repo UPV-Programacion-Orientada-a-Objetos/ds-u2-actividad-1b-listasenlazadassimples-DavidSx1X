@@ -1,0 +1,27 @@
+\doxysection{Sensor\+Presion.\+h}
+\hypertarget{_sensor_presion_8h_source}{}\label{_sensor_presion_8h_source}\index{src/SensorPresion.h@{src/SensorPresion.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SENSOR\_PRESION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SENSOR\_PRESION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_base_8h}{SensorBase.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lista_sensor_8h}{ListaSensor.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }SensorPresion\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sensor_base_aa03697680b21dbf3ca5ab797d50c6126}{SensorBase}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_lista_sensor}{ListaSensor<int>}}\ historial;\ \textcolor{comment}{//\ Lista\ interna\ de\ lecturas}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ SensorPresion(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ n);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~SensorPresion();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ Implementación\ de\ la\ interfaz\ virtual}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_presion_aff696aceb5e619529f911311a35d3c76}{procesarLectura}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_presion_ad5181690dfb24946217e882606f04428}{imprimirInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_presion_a842b0bcefce4fbfd1e6ef14ce0fe4117}{agregarLectura}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ valor)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SENSOR\_PRESION\_H}}
+
+\end{DoxyCode}
